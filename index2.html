@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="./index.css" />
+		<!-- @theme {  --font-display: "poppins", "sans-serif"; } -->
+	</head>
+
+	<body class="font-poppins overflow-x-hidden">
+		<div class="max-w-[1440px] m-auto max-2xl:overflow-hidden container">
+			<header>
+				<div class="relative">
+					<div
+						class="pt-10 pb-24 px-40 max-xl:pt-10 max-xl:pb-24 max-xl:px-10 max-lg:pt-10 max-lg:pb-24 max-lg:px-24 max-md:p-8"
+					>
+						<nav class="flex justify-between items-center flex-wrap">
+							<a href="#" class="max-lg:w-[20%] z-20">
+								<img
+									src="./images/header_logo.png"
+									alt="header logo"
+									class="max-w-[116px]"
+								/>
+							</a>
+							<div class="hidden max-lg:block max-lg:w-[80%] text-right z-20">
+								<button class="text-2xl navbar-toggler-btn">
+									<i class="fas fa-bars"></i>
+								</button>
+							</div>
+							<div
+								class="flex justify-between items-center gap-15 max-lg:hidden max-lg:absolute max-lg:top-0 max-lg:left-0 max-lg:pt-[80px] max-lg:w-full max-lg:bg-white max-lg:z-10 max-lg:py-10"
+								id="navMenu"
+							>
+								<ul
+									class="flex justify-between items-center gap-10 text-[#484848] max-lg:w-1/2 max-lg:m-auto max-lg:flex-col max-lg:gap-3 max-lg:items-center max-lg:text-start max-lg:text-xl max-sm:items-start max-[375px]:w-full max-[375px]:pl-4 max-[320px]:w-full max-[320px]:pl-3"
+								>
+									<li>
+										<a href="" class="relative group"
+											>Become a renter
+											<div
+												class="absolute w-full h-0.5 bg-gray-600 scale-0 group-hover:scale-100 transition-transform"
+											></div
+										></a>
+									</li>
+									<li>
+										<a href="" class="relative group"
+											>Rental deals
+											<div
+												class="absolute w-full h-0.5 bg-gray-600 scale-0 group-hover:scale-100 transition-transform"
+											></div
+										></a>
+									</li>
+									<li>
+										<a href="" class="relative group"
+											>How it works
+											<div
+												class="absolute w-full h-0.5 bg-gray-600 scale-0 group-hover:scale-100 transition-transform"
+											></div
+										></a>
+									</li>
+									<li>
+										<a href="" class="relative group"
+											>Why choose us
+											<div
+												class="absolute w-full h-0.5 bg-gray-600 scale-0 group-hover:scale-100 transition-transform"
+											></div
+										></a>
+									</li>
+								</ul>
+								<div
+									class="flex justify-center items-center gap-10 max-lg:flex-col max-lg:gap-5 max-lg:pt-10 max-sm:items-start max-lg:w-1/2 max-lg:m-auto max-[375px]:m-0 max-[375px]:w-full max-[375px]:pl-4 max-[375px]:pt-4 max-[320px]:m-0 max-[320px]:w-full max-[320px]:pl-3 max-[320px]:pt-4"
+								>
+									<a
+										href=""
+										class="max-lg:shadow-2xl max-lg:bg-slate-200 max-lg:w-full max-lg:text-center max-lg:py-2 max-lg:px-8 max-lg:rounded-lg relative group"
+										>Sign in
+										<div
+											class="absolute w-full h-0.5 bg-gray-600 scale-0 group-hover:scale-100 transition-transform"
+										></div
+									></a>
+									<button
+										class="py-2 px-8 bg-[#1572D3] text-white rounded-lg cursor-pointer max-lg:w-full"
+									>
+										Sign up
+									</button>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div
+						class="flex justify-between items-center max-lg:items-start xl:pl-40 max-md:px-24 lg:pl-10 max-md:pl-8 max-sm:px-8 pt-14 max-lg:flex-col"
+					>
+						<div
+							class="lg:w-1/2 max-md:w-full max-md:order-2 max-lg:pt-95 max-lg:pl-24 max-md:pl-0"
+						>
+							<h1 class="text-5xl font-medium max-[420px]:text-4xl">
+								Find, book and <br />
+								rent a car
+								<span class="text-[#1572D3] relative"
+									>Easily
+									<img
+										src="./images/Vector 1.png"
+										alt=""
+										class="absolute right-0 bottom-[-9]"
+								/></span>
+							</h1>
+							<p class="py-10 lg:pr-40 xl:pr-45">
+								Get a car wherever and whenever you need it with your IOS and Android
+								device.
+							</p>
+							<div class="flex justify-start items-center gap-5">
+								<img src="./images/play-stor.png" alt="" />
+								<img src="./images/app-stor.png" alt="" />
+							</div>
+						</div>
+
+						<div class="w-1/2 max-lg:w-full max-lg:order-1">
+							<div
+								class="absolute top-44 xl:right-[-250px] bottom-[5px] lg:-right-90 max-lg:pl-44 max-md:pl-0 max-sm:pl-0"
+							>
+								<img
+									src="./images/full-car.png"
+									class="max-lg:max-w-[900px] max-md:max-w-[800px] max-sm:max-w-[650px]"
+									alt=""
+								/>
+							</div>
+							<div
+								class="absolute top-0 right-[-236px] opacity-[13%] z-[-1] bottom-[5px]"
+							>
+								<img src="./images/full-logo.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="px-40 pt-48 pb-12 max-xl:px-20 max-lg:px-4 max-lg:py-10 max-md:w-1/2 max-sm:w-[70%] max-md:m-auto"
+					>
+						<div
+							class="flex justify-between items-center gap-10 shadow-lg bg-[#ffffff] px-8 py-4 rounded-2xl max-md:flex-col max-md:justify-center max-md:items-start max-md:gap-12"
+						>
+							<div class="flex justify-center items-center gap-2 pl-6">
+								<img src="./images/location.png" alt="location" />
+								<div>
+									<h6 class="text-[#3E3E3E]">Location</h6>
+									<p class="text-[#B6B6B6] text-sm">Search your location</p>
+								</div>
+							</div>
+							<div class="flex justify-center items-center gap-2 border-l-1 pl-6">
+								<img src="./images/calendar.png" alt="calendar" />
+								<div>
+									<h6 class="text-[#3E3E3E]">Pickup date</h6>
+									<p class="text-[#B6B6B6] text-sm">Tue 15 Feb, 09:00</p>
+								</div>
+							</div>
+							<div class="flex justify-center items-center gap-2 border-l-1 pl-6">
+								<img src="./images/calendar.png" alt="calendar" />
+								<div>
+									<h6 class="text-[#3E3E3E]">Return date</h6>
+									<p class="text-[#B6B6B6] text-sm">Thu 16 Feb, 11:00</p>
+								</div>
+							</div>
+							<button
+								class="py-2 px-8 bg-[#1572D3] text-white rounded-lg cursor-pointer max-md:w-full"
+							>
+								Search
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section>
+					<div>
+						<div
+							class="flex flex-col items-center justify-center w-3/4 m-auto gap-10 pt-20 max-sm:w-full max-md:w-full max-[992px]:w-full"
+						>
+							<div class="text-center px-4">
+								<a
+									href=""
+									class="bg-[#1572D31A] text-[#1572D3] hover:bg-[#1572D3] hover:text-white rounded-lg px-6 py-4"
+									>HOW IT WORK</a
+								>
+								<h2 class="font-medium text-4xl pt-8">
+									Rent with following 3 working steps
+								</h2>
+							</div>
+							<div class="flex justify-center items-center gap-15 max-md:flex-col">
+								<div class="flex flex-col items-center gap-5">
+									<div class="p-8 bg-[#1572D31A] rounded-2xl">
+										<img src="./images/location-tick.png" alt="location tick" />
+									</div>
+									<div class="text-center">
+										<h6 class="font-medium text-xl">Choose location</h6>
+										<p class="text-[#6D6D6D]">Choose your and find your best car</p>
+									</div>
+								</div>
+								<div class="flex flex-col items-center gap-5">
+									<div class="p-8 bg-[#1572D31A] rounded-2xl">
+										<img src="./images/calendar-blue.png" alt="calendar-blue" />
+									</div>
+									<div class="text-center">
+										<h6 class="font-medium text-xl">Pick-up date</h6>
+										<p class="text-[#6D6D6D]">
+											Select your pick up date and time to book your car
+										</p>
+									</div>
+								</div>
+								<div class="flex flex-col items-center gap-5">
+									<div class="p-8 bg-[#1572D31A] rounded-2xl">
+										<img src="./images/car.png" alt="car" />
+									</div>
+									<div class="text-center">
+										<h6 class="font-medium text-xl">Book your car</h6>
+										<p class="text-[#6D6D6D]">
+											Book your car and we will deliver it directly to you
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="pt-40 w-full pb-20 inline-flex animate-loop-scroll flex-nowrap overflow-hidden"
+						>
+							<ul
+								class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll"
+							>
+								<li class="slide">
+									<img src="./images/honda.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/jaguar.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/nissan.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/volvo.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/audi.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/acura.png" alt="" />
+								</li>
+							</ul>
+
+							<ul
+								class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll"
+								aria-controls="true"
+							>
+								<li class="slide">
+									<img src="./images/honda.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/jaguar.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/nissan.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/volvo.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/audi.png" alt="" />
+								</li>
+								<li class="slide">
+									<img src="./images/acura.png" alt="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="relative max-2xl:overflow-y-hidden">
+					<div class="flex py-24 max-lg:flex-col">
+						<div class="w-1/2 max-lg:w-full">
+							<div class="absolute top-69 -left-46 max-lg:-left-25 max-md:-left-40">
+								<img
+									src="./images/Audi-car.png"
+									class="max-lg:w-[900px] max-xl:w-[700px]"
+									alt=""
+								/>
+							</div>
+							<div class="absolute top-35 -left-83 -z-1">
+								<img src="./images/shape.png" alt="" />
+							</div>
+						</div>
+
+						<div
+							class="w-1/2 items-center pr-32 max-xl:pr-10 max-lg:w-full max-lg:pt-[570px] max-lg:px-24 max-md:px-8 max-sm:"
+						>
+							<a
+								href=""
+								class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4 hover:bg-[#1572D3] hover:text-white"
+								>WHY CHOOSE US</a
+							>
+							<h2
+								class="text-4xl text-[#333333] font-medium leading-[130%] pt-8 max-[512px]:text-3xl"
+							>
+								We offer the best experience <br class="max-[512px]:hidden" />with our
+								rental deals
+							</h2>
+
+							<div class="pt-14 flex flex-col gap-10 items-start justify-center">
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/wallet.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">Best price guaranteed</h6>
+										<p class="text-[#6D6D6D]">
+											Find a lower price? We’ll refund you 100%
+											<br class="max-[512px]:hidden" />of the difference.
+										</p>
+									</div>
+								</div>
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/user-tick.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">Experience driver</h6>
+										<p class="text-[#6D6D6D]">
+											Don’t have driver? Don’t worry, we have many
+											<br class="max-[512px]:hidden" />experienced driver for you.
+										</p>
+									</div>
+								</div>
+
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/24-support.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">24 hour car delivery</h6>
+										<p class="text-[#6D6D6D]">
+											Book your car anytime and we will deliver it
+											<br class="max-[512px]:hidden" />directly to you.
+										</p>
+									</div>
+								</div>
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/messages-2.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">24/7 technical support</h6>
+										<p class="text-[#6D6D6D]">
+											Have a question? Contact Rentcars support
+											<br class="max-[512px]:hidden" />any time when you have problem.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div>
+						<div
+							class="py-20 flex flex-col items-center justify-center m-auto gap-10"
+						>
+							<div class="text-center px-4">
+								<a
+									href=""
+									class="bg-[#1572D31A] text-[#1572D3] hover:bg-[#1572D3] hover:text-white rounded-lg px-6 py-4"
+									>POPULAR RENTAL DEALS</a
+								>
+								<h2 class="font-medium text-4xl pt-8">
+									Most popular cars rental deals
+								</h2>
+							</div>
+							<div
+								class="flex gap-8 items-center justify-center car-card max-lg:flex-wrap max-lg:gap-3 max-sm:px-8"
+							></div>
+							<button
+								class="bottom-1 border-gray-500 py-4 px-9 bg-white rounded-lg cursor-pointer shadow-2xl"
+							>
+								Show all vehicles &#8594;
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="overflow-hidden z-10">
+					<div class="bg-[#1572D31A] m-auto relative py-23">
+						<div>
+							<img
+								src="./images/left.png"
+								class="absolute top-23 left-50 max-lg:hidden"
+								alt=""
+							/>
+							<img
+								src="./images/right.png"
+								class="absolute -top-16 right-25 max-lg:hidden"
+								alt=""
+							/>
+						</div>
+						<div class="text-center px-4 pb-20">
+							<a
+								href="#"
+								class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4 text-lg font-medium transition-all hover:bg-[#1572D3] hover:text-white"
+								>TESTIMONIALS</a
+							>
+							<h2 class="font-medium text-4xl pt-8">What people say about us?</h2>
+						</div>
+						<div class="swiper mySwiper px-40">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide overflow-hidden shadow-lg bg-white rounded-xl">
+									<div class="flex items-center space-x-6 w-full max-sm:flex-col">
+										<div class="relative w-1/2 max-sm:w-full h-[500px]">
+											<img
+												src="./images/Charlie-Johnson.jpeg"
+												alt="Charlie Johnson"
+												class="absolute inset-0 w-full h-full object-cover shadow-md"
+											/>
+										</div>
+										<div
+											class="flex flex-col justify-between w-1/2 max-sm:w-full max-sm:p-8 pr-6"
+										>
+											<h5 class="text-4xl font-medium text-[#383838]">
+												5.0 <span class="text-xl">stars</span>
+											</h5>
+											<div class="flex items-center pt-2">
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+											</div>
+											<div class="pt-6">
+												<p class="text-[#282828] text-lg">
+													“I feel very secure when using caretall's services. Your customer
+													care team is very enthusiastic, and the driver is always on time.”
+												</p>
+												<h6 class="pt-8 text-[#252525] text-xl font-medium">
+													Charlie Johnson
+												</h6>
+												<p class="text-[#838383] text-sm">From New York, US</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="swiper-slide flex justify-center items-center shadow-lg overflow-hidden bg-white rounded-xl ml-5"
+								>
+									<div class="flex items-center space-x-6 w-full max-sm:flex-col">
+										<div class="relative w-1/2 h-[500px] max-sm:w-full">
+											<img
+												src="./images/Charlie-Johnson.jpeg"
+												alt="Charlie Johnson"
+												class="absolute inset-0 w-full h-full object-cover shadow-md"
+											/>
+										</div>
+										<div
+											class="flex flex-col justify-between w-1/2 max-sm:w-full max-sm:p-8 pr-6"
+										>
+											<h5 class="text-4xl font-medium text-[#383838]">
+												5.0 <span class="text-xl">stars</span>
+											</h5>
+											<div class="flex items-center pt-2">
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+											</div>
+											<div class="pt-6">
+												<p class="text-[#282828] text-lg">
+													“I feel very secure when using caretall's services. Your customer
+													care team is very enthusiastic, and the driver is always on time.”
+												</p>
+												<h6 class="pt-8 text-[#252525] text-xl font-medium">
+													Charlie Johnson
+												</h6>
+												<p class="text-[#838383] text-sm">From New York, US</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="swiper-slide flex justify-center items-center shadow-lg overflow-hidden bg-white rounded-xl ml-5"
+								>
+									<div class="flex items-center space-x-6 w-full max-sm:flex-col">
+										<div class="relative w-1/2 h-[500px] max-sm:w-full">
+											<img
+												src="./images/Jenny-Wilson.jpeg"
+												alt="Charlie Johnson"
+												class="absolute inset-0 w-full h-full shadow-md"
+											/>
+										</div>
+										<div
+											class="flex flex-col justify-between w-1/2 max-sm:w-full max-sm:p-8 pr-6"
+										>
+											<h5 class="text-4xl font-medium text-[#383838]">
+												5.0 <span class="text-xl">stars</span>
+											</h5>
+											<div class="flex items-center pt-2">
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+												<img src="./images/Star 1.png" alt="Star" class="w-6" />
+											</div>
+											<div class="pt-6">
+												<p class="text-[#282828] text-lg">
+													“I feel very secure when using caretall's services. Your customer
+													care team is very enthusiastic, and the driver is always on time.”
+												</p>
+												<h6 class="pt-8 text-[#252525] text-xl font-medium">
+													Jenny Wilson
+												</h6>
+												<p class="text-[#838383] text-sm">From New York, US</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="max-2xl:overflow-y-hidden">
+					<div class="relative pt-20 overflow-hidden">
+						<div class="flex justify-center items-center max-lg:flex-col">
+							<div
+								class="w-1/2 pl-40 max-xl:pl-10 pr-10 py-24 max-lg:pl-24 max-lg:w-full max-sm:p-8 z-10"
+							>
+								<a
+									href="#"
+									class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4 text-lg font-medium transition-all hover:bg-[#1572D3] hover:text-white"
+									>DOWNLOAD</a
+								>
+								<h2 class="font-medium text-5xl pt-8 text-[#282828]">
+									Download Rentcars App for <span class="text-[#1572D3]"> FREE</span>
+								</h2>
+								<p class="py-10 text-[#3E3E3E]">
+									For faster, easier booking and exclusive deals.
+								</p>
+								<div class="flex gap-4 items-center justify-start">
+									<img src="./images/play-stor.png" alt="" />
+									<img src="./images/app-stor.png" alt="" />
+								</div>
+							</div>
+
+							<div class="w-1/2 max-lg:w-full max-lg:pt-85 max-[425px]:pt-60 relative">
+								<img
+									src="./images/iPhone-14-Pro.png"
+									class="absolute -top-40 max-lg:-top-10 max-md:-top-5 max-sm:top-0 right-15 max-lg:right-30 max-md:right-20 max-sm:right-7 max-sm:w-[90%]"
+									alt=""
+								/>
+							</div>
+							<div class="absolute -top-33 -left-100">
+								<img src="./images/shape.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="bg-[#051C34] z-10 max-xl:p-10 py-10 xl:px-40 max-lg:px-24">
+					<div
+						class="flex max-lg:flex-col justify-start gap-30 items-start text-[#D6D6D6]"
+					>
+						<div class="w-1/5 max-lg:w-full">
+							<div class="footer-logo-img">
+								<a href=""><img src="./images/footer-logo.png" alt="" /></a>
+							</div>
+							<div class="pt-9 flex flex-col justify-center items-start gap-6">
+								<div class="flex justify-start items-center gap-2">
+									<img src="./images/footer-location.png" alt="" />
+									<p>
+										25566 Hc 1, Glenallen, <br />
+										Alaska, 99588, USA
+									</p>
+								</div>
+								<div class="flex justify-start items-center gap-2">
+									<img src="./images/call.png" alt="" />
+									<p>+603 4784 273 12</p>
+								</div>
+								<div class="flex justify-start items-center gap-2">
+									<img src="./images/sms.png" alt="" />
+									<p>rentcars@gmail.com</p>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="flex max-[992px]:flex-wrap justify-between max-lg:w-full items-start gap-19"
+						>
+							<div class="max-lg:w-1/4 max-md:w-full">
+								<div class="footer-content-list">
+									<h6 class="text-[#ffffff] pb-8">Our Product</h6>
+									<ul>
+										<li class="text-sm pb-4 hover:underline"><a href="">Career</a></li>
+										<li class="text-sm pb-4 hover:underline"><a href="">Car</a></li>
+										<li class="text-sm pb-4 hover:underline"><a href="">Packages</a></li>
+										<li class="text-sm pb-4 hover:underline"><a href="">Features</a></li>
+										<li class="text-sm hover:underline"><a href="">Priceline</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="max-lg:w-1/4 max-md:w-full max-[992px]:w-1/2">
+								<div class="footer-content-list">
+									<h6 class="text-[#ffffff] pb-8">Resources</h6>
+									<ul>
+										<li class="text-sm pb-4 hover:underline"><a href="">Download</a></li>
+										<li class="text-sm pb-4 hover:underline">
+											<a href="">Help Centre</a>
+										</li>
+										<li class="text-sm pb-4 hover:underline"><a href="">Guides</a></li>
+										<li class="text-sm pb-4 hover:underline">
+											<a href="">Partner Network</a>
+										</li>
+										<li class="text-sm pb-4 hover:underline"><a href="">Cruises</a></li>
+										<li class="text-sm hover:underline"><a href="">Developer</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="max-lg:w-1/4 max-md:w-full max-[992px]:w-1/2">
+								<div class="footer-content-list">
+									<h6 class="text-[#ffffff] pb-8">About Rentcars</h6>
+									<ul>
+										<li class="text-sm pb-4 hover:underline">
+											<a href="">Why choose us</a>
+										</li>
+										<li class="text-sm pb-4 hover:underline"><a href="">Our Story</a></li>
+										<li class="text-sm pb-4 hover:underline">
+											<a href="">Investor Relations</a>
+										</li>
+										<li class="text-sm pb-4 hover:underline">
+											<a href="">Press Center</a>
+										</li>
+										<li class="text-sm hover:underline"><a href="">Advertise</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="max-lg:w-1/4 max-md:w-full max-[992px]:w-1/2">
+								<div class="footer-content-list">
+									<h6 class="text-[#ffffff] pb-8">Follow Us</h6>
+									<div class="flex justify-start items-center gap-4">
+										<a href=""><img src="./images/facebook.png" alt="facebook" /></a>
+										<a href=""><img src="./images/instagram.png" alt="instagram" /></a>
+										<a href=""><img src="./images/youtube.png" alt="youtube" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="mt-16 text-[#575757]" />
+					<p class="py-8 text-[#D6D6D6]">
+						Copyright 2023 ・ Rentcars, All Rights Reserved
+					</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./index.js"></script>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				scrollbar: {
+					slidePreview: "auto",
+					spaceBetween: 30,
+					hide: true,
+				},
+			});
+		</script>
+
+		<script>
+			document
+				.querySelector(".navbar-toggler-btn")
+				.addEventListener("click", function () {
+					const navMenu = document.getElementById("navMenu");
+					navMenu.classList.toggle("max-lg:block");
+					navMenu.classList.toggle("max-lg:hidden");
+
+					// Toggle hamburger icon between bars and X
+					const hamburgerIcon = this.querySelector("i");
+					if (hamburgerIcon.classList.contains("fa-bars")) {
+						hamburgerIcon.classList.remove("fa-bars");
+						hamburgerIcon.classList.add("fa-xmark");
+					} else {
+						hamburgerIcon.classList.remove("fa-xmark");
+						hamburgerIcon.classList.add("fa-bars");
+					}
+				});
+		</script>
+	</body>
+</html>

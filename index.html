@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link href="./output.css" rel="stylesheet" />
+	</head>
+	<body class="font-poppins overflow-x-hidden">
+		<div class="max-w-[1440px] m-auto max-2xl:overflow-hidden container">
+			<div class="relative">
+				<!--==============================================
+		                    Header
+		          =============================================-->
+				<header class="w-full">
+					<div class="p-4 md:p-6 sm:p-5 lg:pt-8 lg:px-8 xl:pt-10 xl:px-[160px]">
+						<div class="flex justify-between items-center">
+							<div class="z-10">
+								<img
+									src="images/logo.png"
+									alt="Company Logo"
+									class="h-8 sm:h-9 md:h-6 lg:h-9 w-auto"
+								/>
+							</div>
+
+							<button id="menuToggle" class="block md:hidden z-11">
+								<i class="fa-solid fa-bars"></i>
+							</button>
+
+							<nav class="hidden md:block">
+								<ul
+									class="flex text-[16px] font-medium gap-3 sm:text-base md:text-[12px] lg:text-[15px] md:gap-5 lg:gap-6 xl:gap-10"
+								>
+									<li>
+										<a
+											href=""
+											class="relative group hover:text-[#1572D3] transition-colors duration-600"
+											>Become a renter
+											<div
+												class="absolute w-full h-0.5 bg-[#1572D3] scale-0 group-hover:scale-100 transition-transform duration-600"
+											></div
+										></a>
+									</li>
+									<li>
+										<a
+											href=""
+											class="relative group hover:text-[#1572D3] transition-colors duration-600"
+											>Rental deals
+											<div
+												class="absolute w-full h-0.5 bg-[#1572D3] scale-0 group-hover:scale-100 transition-transform duration-600"
+											></div
+										></a>
+									</li>
+									<li>
+										<a
+											href=""
+											class="relative group hover:text-[#1572D3] transition-colors duration-600"
+											>How it works
+											<div
+												class="absolute w-full h-0.5 bg-[#1572D3] scale-0 group-hover:scale-100 transition-transform duration-600"
+											></div
+										></a>
+									</li>
+									<li>
+										<a
+											href=""
+											class="relative group hover:text-[#1572D3] transition-colors duration-600"
+											>Why choose us
+											<div
+												class="absolute w-full h-0.5 bg-[#1572D3] scale-0 group-hover:scale-100 transition-transform duration-600"
+											></div
+										></a>
+									</li>
+								</ul>
+							</nav>
+
+							<div
+								class="hidden text-[16px] md:flex md:text-[12px] lg:text-[15px] sm:text-base font-medium gap-3 lg:gap-6"
+							>
+								<button class="hover:text-[#1572D3] transition-colors">Sign in</button>
+								<button
+									class="py-2 px-3 lg:py-2 lg:px-4 bg-[#1572D3] text-white rounded-lg hover:bg-[#135fb0] transition-colors"
+								>
+									Sign Up
+								</button>
+							</div>
+
+							<div
+								id="mobileMenu"
+								class="fixed inset-0 bg-white z-10 md:hidden hidden pt-20 px-6"
+							>
+								<nav class="mb-8 ">
+									<ul class="flex flex-col gap-4 text-lg font-medium">
+										<li>
+											<a href="" class="block hover:text-[#1572D3]">Become a renter</a>
+										</li>
+										<li>
+											<a href="" class="block hover:text-[#1572D3]">Rental deals</a>
+										</li>
+										<li>
+											<a href="" class="block hover:text-[#1572D3]">How it work</a>
+										</li>
+										<li>
+											<a href="" class="block hover:text-[#1572D3]">Why choose us</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="flex flex-col space-y-4">
+									<button class="py-2 px-4 text-center hover:text-[#1572D3]">
+										Sign in
+									</button>
+									<button
+										class="py-2 px-4 bg-[#1572D3] text-white rounded-lg hover:bg-[#135fb0]"
+									>
+										Sign Up
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!--==============================================
+			                    Section 1
+			     =============================================-->
+				<div
+					class="flex justify-between items-center max-lg:items-start xl:pl-40 max-md:px-24 lg:pl-10 max-md:pl-8 max-sm:px-8 pt-14 max-lg:flex-col"
+				>
+					<div
+						class="lg:w-1/2 max-md:w-full max-md:order-2 max-lg:pt-95 max-lg:pl-24 max-md:pl-0"
+					>
+						<h1 class="font-semibold text-[48px] text-[#242424] max-[420px]:text-4xl">
+							Find, book and <br />rent a car
+							<span class="text-[#1572D3] relative"
+								>Easily
+								<img src="images/sec1line.png" alt="" class="absolute right-0 top-13.5"
+							/></span>
+						</h1>
+						<p
+							class="text-[18px] text-[#272727] font-normal tracking-[150%] py-10 lg:pr-40 xl:pr-45"
+						>
+							Get a car wherever and whenever you <br />
+							need it with your IOS and Android device.
+						</p>
+						<div class="flex justify-start items-center gap-5">
+							<img src="images/playstore.png" alt="" />
+							<img src="images/applestore.png" alt="" />
+						</div>
+					</div>
+					<div class="w-1/2 max-lg:w-full max-lg:order-1">
+						<div
+							class="absolute top-44 xl:right-[-135px] bottom-[5px] lg:-right-90 max-lg:pl-44 max-md:pl-0 md:top-25 max-sm:pl-0"
+						>
+							<img
+								src="./images/sec1car.png"
+								class="max-lg:max-w-[900px] max-md:max-w-[800px] max-sm:max-w-[650px]"
+								alt=""
+							/>
+						</div>
+						<div
+							class="absolute top-[-40px] right-[-240px] opacity-[50%] z-[-1] bottom-[5px]"
+						>
+							<img src="images/sec1backgroundimg.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div
+					class="px-40 pt-45 pb-12 max-xl:px-20 max-lg:px-4 max-lg:py-10 max-md:w-1/2 max-sm:w-[70%] max-md:m-auto"
+				>
+					<div
+						class="flex justify-between items-center gap-10 shadow-2xl bg-[#ffffff] px-8 py-4 rounded-2xl max-md:flex-col max-md:justify-center max-md:items-start max-md:gap-12"
+					>
+						<div class="flex justify-center items-center gap-2 pl-6">
+							<img src="./images/location.png" alt="location" />
+							<div>
+								<h6 class="text-[#3E3E3E]">Location</h6>
+								<p class="text-[#B6B6B6] text-sm">Search your location</p>
+							</div>
+						</div>
+						<div class="flex justify-center items-center gap-2 border-l-1 pl-6">
+							<img src="./images/calendar.png" alt="calendar" />
+							<div>
+								<h6 class="text-[#3E3E3E]">Pickup date</h6>
+								<p class="text-[#B6B6B6] text-sm">Tue 15 Feb, 09:00</p>
+							</div>
+						</div>
+						<div class="flex justify-center items-center gap-2 border-l-1 pl-6">
+							<img src="./images/calendar.png" alt="calendar" />
+							<div>
+								<h6 class="text-[#3E3E3E]">Return date</h6>
+								<p class="text-[#B6B6B6] text-sm">Thu 16 Feb, 11:00</p>
+							</div>
+						</div>
+						<button
+							class="py-2 px-8 bg-[#1572D3] text-white rounded-lg cursor-pointer max-md:w-full"
+						>
+							Search
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			document.getElementById("menuToggle").addEventListener("click", function () {
+				const mobileMenu = document.getElementById("mobileMenu");
+				mobileMenu.classList.toggle("hidden");
+			});
+		</script>
+	</body>
+</html>
