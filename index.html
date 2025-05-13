@@ -83,9 +83,16 @@
 							<div
 								class="hidden text-[16px] md:flex md:text-[12px] lg:text-[15px] sm:text-base font-medium gap-3 lg:gap-6"
 							>
-								<button class="hover:text-[#1572D3] transition-colors">Sign in</button>
 								<button
-									class="py-2 px-3 lg:py-2 lg:px-4 bg-[#1572D3] text-white rounded-lg hover:bg-[#135fb0] transition-colors"
+									class="relative group hover:text-[#1572D3] transition-colors cursor-pointer"
+								>
+									Sign in
+									<div
+										class="absolute w-full h-0.5 bg-[#1572D3] scale-0 group-hover:scale-100 transition-transform duration-600"
+									></div>
+								</button>
+								<button
+									class="py-2 px-3 lg:py-2 lg:px-4 bg-[#1572D3] text-white rounded-lg hover:bg-[#135fb0] transition-colors cursor-pointer"
 								>
 									Sign Up
 								</button>
@@ -95,7 +102,7 @@
 								id="mobileMenu"
 								class="fixed inset-0 bg-white z-10 md:hidden hidden pt-20 px-6"
 							>
-								<nav class="mb-8 ">
+								<nav class="mb-8">
 									<ul class="flex flex-col gap-4 text-lg font-medium">
 										<li>
 											<a href="" class="block hover:text-[#1572D3]">Become a renter</a>
@@ -148,8 +155,16 @@
 							need it with your IOS and Android device.
 						</p>
 						<div class="flex justify-start items-center gap-5">
-							<img src="images/playstore.png" alt="" />
-							<img src="images/applestore.png" alt="" />
+							<img
+								src="images/playstore.png"
+								alt=""
+								class="cursor-pointer hover:scale-105 transition duration-300"
+							/>
+							<img
+								src="images/applestore.png"
+								alt=""
+								class="cursor-pointer hover:scale-105 transition duration-300"
+							/>
 						</div>
 					</div>
 					<div class="w-1/2 max-lg:w-full max-lg:order-1">
@@ -197,19 +212,264 @@
 							</div>
 						</div>
 						<button
-							class="py-2 px-8 bg-[#1572D3] text-white rounded-lg cursor-pointer max-md:w-full"
+							class="py-2 px-8 bg-[#1572D3] text-white cursor-pointer rounded-lg max-md:w-full hover:bg-[#1571d3c2] z-1000"
 						>
 							Search
 						</button>
 					</div>
 				</div>
 			</div>
+			<main>
+				<!-- ==============================================
+			                    Section 2
+			     ============================================= -->
+				<section class="sec2">
+					<div class="py-[86px] px-4 sm:px-6 md:px-12">
+						<div
+							class="flex flex-col items-center justify-center pb-[80px] sm:pb-[100px]"
+						>
+							<div class="text-center">
+								<a
+									href="#"
+									class="py-4 px-8 bg-[#1572D31A] text-[#1572D3] text-sm font-medium leading-[150%] rounded-[8px] hover:bg-[#1572D3] hover:text-white transition-colors duration-300"
+									>HOW IT WORK</a
+								>
+								<h2
+									class="pt-8 pb-16 font-medium text-[28px] sm:text-[32px] md:text-[38px] text-center max-w-[700px] mx-auto"
+								>
+									Rent with following 3 working steps
+								</h2>
+							</div>
+
+							<div
+								class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-15"
+							>
+								<div class="flex flex-col items-center text-center max-w-[250px]">
+									<div class="bg-[#ECF5FF] p-8 rounded-[16px]">
+										<img
+											src="images/location-tick.png"
+											alt="Choose location"
+											class="w-12 h-12"
+										/>
+									</div>
+									<div class="pt-10">
+										<h4 class="text-lg font-medium pb-6">Choose location</h4>
+										<p class="text-sm font-medium text-[#6D6D6D]">
+											Choose your location and find <br />
+											your best car
+										</p>
+									</div>
+								</div>
+
+								<div class="flex flex-col items-center text-center max-w-[250px]">
+									<div class="bg-[#ECF5FF] p-8 rounded-[16px]">
+										<img
+											src="images/calendar1.png"
+											alt="Pick-up date"
+											class="w-12 h-12"
+										/>
+									</div>
+									<div class="pt-10">
+										<h4 class="text-lg font-medium pb-6">Pick-up date</h4>
+										<p class="text-sm font-medium text-[#6D6D6D]">
+											Select your pick up date and <br />
+											time to book your car
+										</p>
+									</div>
+								</div>
+
+								<div class="flex flex-col items-center text-center max-w-[250px]">
+									<div class="bg-[#ECF5FF] p-8 rounded-[16px]">
+										<img src="images/car.png" alt="Book your car" class="w-12 h-12" />
+									</div>
+									<div class="pt-10">
+										<h4 class="text-lg font-medium pb-6">Book your car</h4>
+										<p class="text-sm font-medium text-[#6D6D6D]">
+											Book your car and we will deliver <br />
+											it directly to you
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="w-full overflow-hidden">
+							<div
+								class="inline-flex flex-nowrap w-max animate-scroll"
+								aria-controls="true"
+							>
+								<ul
+									class="flex items-center justify-center [&_li]:mx-8 [&_img]:max-w-none"
+								>
+									<li class="slide">
+										<img src="./images/honda logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/jaguar logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/nissan logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/volvo logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/audi logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/acura logo.png" alt="" />
+									</li>
+								</ul>
+
+								<ul
+									class="flex items-center justify-center [&_li]:mx-8 [&_img]:max-w-none"
+								>
+									<li class="slide">
+										<img src="./images/honda logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/jaguar logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/nissan logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/volvo logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/audi logo.png" alt="" />
+									</li>
+									<li class="slide">
+										<img src="./images/acura logo.png" alt="" />
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ==============================================
+			                    Section 3
+			     =============================================-->
+				<section class="relative max-2xl:overflow-y-hidden">
+					<div class="flex py-24 max-lg:flex-col">
+						<div class="w-1/2 max-lg:w-full">
+							<div
+								class="absolute top-75 -left-46 max-lg:-left-30 max-lg:top-65 max-md:-left-40"
+							>
+								<img
+									src="images/sec3car.png"
+									alt=""
+									class="max-lg:w-[900px] max-xl:w-[700px]"
+								/>
+							</div>
+							<div
+								class="absolute top-25 -left-100 max-lg:-left-70 max-lg:top-45 -z-1"
+							>
+								<img src="images/sec3background.png" alt="" />
+							</div>
+						</div>
+						<div
+							class="w-1/2 items-center pr-32 max-xl:pr-10 max-lg:w-full max-lg:pt-[570px] max-lg:px-24 max-md:px-8 max-sm:"
+						>
+							<div class="max-lg:pb-[56px]">
+								<a
+									href=""
+									class="bg-[#1572D31A] text-[#1572D3] font-medium text-[14px] rounded-[8px] py-[16px] px-[32px] hover:bg-[#1572D3] hover:text-white transition-colors duration-300"
+									>WHY CHOOSE US</a
+								>
+								<h2 class="font-medium text-[38px] pt-[32px]">
+									We offer the best experience <br />
+									with our rental deals
+								</h2>
+							</div>
+							<div class="pt-14 flex flex-col gap-10 items-start justify-center">
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/wallet.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">Best price guaranteed</h6>
+										<p class="text-[#6D6D6D]">
+											Find a lower price? We’ll refund you 100%
+											<br class="max-[512px]:hidden" />of the difference.
+										</p>
+									</div>
+								</div>
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/user-tick.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">Experience driver</h6>
+										<p class="text-[#6D6D6D]">
+											Don’t have driver? Don’t worry, we have many
+											<br class="max-[512px]:hidden" />experienced driver for you.
+										</p>
+									</div>
+								</div>
+
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/24-support.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">24 hour car delivery</h6>
+										<p class="text-[#6D6D6D]">
+											Book your car anytime and we will deliver it
+											<br class="max-[512px]:hidden" />directly to you.
+										</p>
+									</div>
+								</div>
+								<div class="flex gap-6 items-center justify-start">
+									<div class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4">
+										<img src="./images/messages-2.png" alt="location tick" width="50px" />
+									</div>
+									<div>
+										<h6 class="text-xl font-medium">24/7 technical support</h6>
+										<p class="text-[#6D6D6D]">
+											Have a question? Contact Rentcars support
+											<br class="max-[512px]:hidden" />any time when you have problem.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ==============================================
+			                    Section 4
+			     =============================================-->
+				<section class="">
+					<div class="px-4 sm:px-6 md:px-10 lg:px-[100px] py-10 md:py-[84px]">
+						<div class="text-center pb-[64px]">
+							<div
+								class="inline-block px-6 py-2 bg-[#1572D31A] text-[#1572D3] font-medium rounded-[8px] mb-4 z-1000"
+							>
+								POPULAR RENTAL DEALS
+							</div>
+							<h2
+								class="pt-6 text-2xl sm:text-3xl md:text-4xl font-medium text-[#333333]"
+							>
+								Most popular cars rental deals
+							</h2>
+						</div>
+						<div
+							id="car-cards"
+							class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[32px] pb-[64px]"
+						></div>
+
+						<div class="text-center mt-10">
+							<a
+								href="#"
+								class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 transition duration-300"
+							>
+								Show all vehicles >
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
 		</div>
-		<script>
-			document.getElementById("menuToggle").addEventListener("click", function () {
-				const mobileMenu = document.getElementById("mobileMenu");
-				mobileMenu.classList.toggle("hidden");
-			});
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
