@@ -104,3 +104,11 @@ Rent Now <i class="fas fa-arrow-right ml-2"></i>
 </div>
 `;
 });
+
+var swiper = new Swiper(".mySwiper", {
+	scrollbar: {
+		slidePreview: "auto",
+		spaceBetween: 30,
+		hide: true,
+	},
+});
